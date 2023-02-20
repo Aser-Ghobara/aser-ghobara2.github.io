@@ -1,0 +1,268 @@
+html, body {
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  border: 1px solid gray;
+  border-top: 5px solid #a4daa4;
+  text-align: justify;
+}
+
+#titletop {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+h1 {
+padding-left: 200px;
+}
+
+
+.removeStuff {
+display: none;
+}
+
+
+nav button {
+border: none;
+outline: none;
+font-size: 1.2em;
+font-weight: 400;
+padding: 0em 1.7em;
+background-color: transparent;
+
+}
+nav button:hover {
+  background-color: #f2f2f2;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  justify-content: center;
+  border-top: 1px solid gray;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+}
+
+footer p {
+margin: 0;
+}
+
+.content {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+flex: 1;
+}
+
+td{
+  text-align: center;
+  border: 1px solid #d0d3d4;
+  width: 80px;
+  font-size: 2.3em;
+  height: 80px;
+}
+ul {
+  list-style-type: circle;
+}
+
+
+#dark-theme footer {
+  background-color: rgb(49, 51, 71);
+}
+
+
+.dark-theme #change-theme-btn {
+  color: white;
+}
+.dark-theme #hintb {
+  color: white;
+}
+.dark-theme #informationb {
+  color: white;
+}
+
+.dark-theme #info {
+  border-left: 1px solid white;
+}
+
+.dark-theme nav button:hover {
+  background-color: rgb(99, 101, 122);
+}
+
+.dark-theme #board {
+  background-color: rgb(49, 51, 71);
+}
+
+
+#tt {
+  display: flex;
+  justify-content: center;
+  margin-top: 90px;
+  margin-bottom: 100px;
+}
+
+
+#hepopup{
+padding-top: 3em;
+border-left: 1px solid  rgb(208, 211, 212);
+margin-left: 3em;
+padding-left: 2.5em;
+min-height: 60vh;
+}
+li{
+margin-bottom: 1em;
+}
+#loser{
+justify-content: center;
+align-items: center;
+text-align: center;
+font-size: 1em;
+background-color: red;
+color: white;
+}
+
+#starto {
+  background-color: #a4daa4;
+  border-radius: 5px;
+  border: 0px;
+  font-size: 20px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: white;
+}
+
+#starto:hover {
+  border: 1px solid black;
+}
+
+.dark-theme #starto{
+  color: black;
+}
+
+.dark-theme #starto:hover{
+  border: 1px solid white;
+}
+
+.dark-theme footer {
+  background-color: rgb(49, 51, 71);
+}
+
+.dark-theme p {
+  color: white;
+}
+
+.dark-theme html {
+  background-color: rgb(49, 51, 71)
+}
+#everything.dark-theme {
+  background-color: rgb(49, 51, 71);
+  color: white;
+}
+
+#everything {
+background: white;
+}
+#hipopup{
+justify-content: center;
+align-items: center;
+text-align: center;
+font-size: 1em;
+background-color: rgb(187, 193, 173);
+}
+.winner{
+justify-content: center;
+align-items: center;
+text-align: center;
+font-size: 1em;
+background-color: rgb(5, 229, 42);
+color: white;
+}
+
+#board {
+  padding-top: 20px;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+#info {
+  flex: 1;
+  border-left: 1px solid black;
+  padding-left: 20px;
+  height: 450px;
+  margin-right: 10px;
+
+}
+
+.boardButton {
+  display:flex;
+  flex-direction: column;
+}
+
+#music {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#music button{
+border: none;
+outline: none;
+font-size: 1.2em;
+font-weight: 400;
+background-color: transparent;
+padding-left: 10px;
+}
+
+#play {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: column;
+}
+
+#play:hover {
+  cursor:pointer;
+}
+
+.dark-theme #play{
+  color: black;
+}
+
+.dark-theme #play:hover{
+  cursor:pointer;
+}
+
+
+
+#pause {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1px;
+  margin: 0px;
+}
+
+#pause:hover {
+  cursor:pointer;
+}
+
+.dark-theme #pause{
+  color: black;
+}
+
+.dark-theme #pause:hover{
+  cursor:pointer;
+}

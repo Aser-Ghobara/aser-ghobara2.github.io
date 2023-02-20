@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Wordle</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+
+    <div class="flex-container">
+      <div id="everything">
+        <div class="header">
+          <header>
+            <div id="music">
+            <button id="play" style="font-size:24px" onclick="playAudio()">&#127925;</button>
+            <button id="pause" style="font-size:24px" onclick="pauseAudio()">&#128263;</button>
+            </div>
+            <div id="titletop">
+            <h1>Wordle</h1>
+            </div>
+            <audio id="myAudio">
+              <source src="./Sneaky-Snitch.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+             <nav>
+              <ul>
+                <button id="change-theme-btn">&#9681;</button>
+                <button id="hintb">&#63;</button>
+               <button id="informationb" onclick="displayInfo()">&#9432;</button>
+              </ul>
+            </nav>
+          </header>
+          </div>
+
+      <div class="body">
+      <div class="content">  
+        <div class="boardButton">
+        <table id="board">
+            <tr>
+              <td id="blocks"></td>
+              <td id="blocks"></td>
+              <td id="blocks"></td>
+              <td id="blocks"></td>
+            </tr>
+            <tr>
+              <td id="blocks"></td>
+              <td id="blocks"></td>
+              <td id="blocks"></td>
+              <td id="blocks"></td>
+            </tr>
+            <tr>
+              <td id="blocks"></td>
+              <td id="blocks"></td>
+              <td id="blocks"></td>
+              <td id="blocks"></td>
+            </tr>
+            <tr>
+              <td id="blocks"></td>
+              <td id="blocks"></td>
+              <td id="blocks"></td>
+              <td id="blocks"></td>
+            </tr>
+          </table>
+          <figure class="removeStuff" id="congratulations">
+            <img src="https://res.cloudinary.com/mkf/image/upload/v1675467141/ENSF-381/labs/congrats_fkscna.gif" alt="congratulations" />
+          </figure>
+          <div id="tt">
+            <button id="starto">Start Over</button>
+            </div>
+            </div>
+      <div id="info" style="display: none;"><h2>How to Play</h2>
+        <ul><li>Start typing. The letters will appear in the boxes</li>
+        <li>Remove letters with Backspace</li>
+        <li>Hit Enter/Return to submit an answer</li>
+        <li>Letters with green background are in the right spot</li>
+        <li>Letters with yellow background exist in the word, but are in the wrong spots</li>
+        <li>Letters with gray background do not exist in the word</li>
+        <li>If you need a hint, click the <b>?</b> icon</li></ul></div>
+      </div>
+      </div>
+      <div id = "hipopup">
+        <p id="clue"></p>
+      </div>
+      <div id ="loser">
+        <p id ="falseW"></p>
+        </div>
+      <div id= "winner" class="win-screen hider">
+        <p id="trueW"></p>
+      </div>
+      <footer>
+        <p>© 2023 Aser Ghobara</p>
+      </footer>
+      </div>
+      </div>
+      
+    <script src="./wordle.js"></script>
+  </body>
+</html>
